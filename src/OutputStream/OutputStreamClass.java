@@ -77,11 +77,11 @@ public class OutputStreamClass {
         System.out.write(100); //calling the write with byte array            
         System.out.flush();
 
-//
-//        String s = "some words";
-//        System.out.println(s.length());
-//        System.out.write(s.getBytes(), 2, s.length() - 2); //calling the write with byte array          
-//        System.out.flush();
+
+        String s = "some words";
+        System.out.println(s.length());
+        System.out.write(s.getBytes(), 2, s.length() - 2); //calling the write with byte array          
+        System.out.flush();
 
     }
 
