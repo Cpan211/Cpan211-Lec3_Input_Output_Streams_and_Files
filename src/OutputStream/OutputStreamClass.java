@@ -33,6 +33,17 @@ public class OutputStreamClass {
 //    //Difference between byte and character streams(ASCII)
 //    
 //    //how to convert string into byte array and use it to write on the console
+
+        System.out.write(100); //calling the write with byte array            
+        System.out.flush();
+
+
+        String s = "some words";
+        System.out.println(s.length());
+        System.out.write(s.getBytes(), 2, s.length() - 2); //calling the write with byte array          
+        System.out.flush();
+
+        
 //            // remember to always close the stream when we are done with it-->finally key word
 //            
 //            
@@ -74,14 +85,7 @@ public class OutputStreamClass {
 //
 //
 //}
-        System.out.write(100); //calling the write with byte array            
-        System.out.flush();
 
-
-        String s = "some words";
-        System.out.println(s.length());
-        System.out.write(s.getBytes(), 2, s.length() - 2); //calling the write with byte array          
-        System.out.flush();
 
     }
 
