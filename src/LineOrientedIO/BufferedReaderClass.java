@@ -19,15 +19,33 @@ public class BufferedReaderClass {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        try (BufferedReader in = new BufferedReader(new FileReader("cpan211.txt"))) {
+        try (
+            // Create a BufferedReader to read from an existing file ("cpan211.txt")
+            // BufferedReader allows us to read text line by line efficiently
+            //BufferedReader in = new BufferedReader(new FileReader("cpan211.txt"));
+
+            // Create a FileWriter to write into another file ("Destination.txt")
+            // Note: this will OVERWRITE the file unless we use the constructor with 'true' for append
+            //FileWriter out = new FileWriter("Destination.txt")
+        ) {
 
             String line;
-            while ((line = in.readLine()) != null) {
-                System.out.println(line+"\n");
-                
-            }
+
+            // Keep reading the file line by line
+            // readLine() returns null when we reach the END of the file
+            //while ((line = in.readLine()) != null) {
+
+                // Print each line to the console so we can see the content
+                //System.out.println(line + "\n");
+
+                // Write the same line into the destination file
+                //out.write(line + "\n");
+
+            //}
+
         } catch (IOException ex) {
-            
+            // If something goes wrong (like file not found, or no permission),
+            // print the exception message
             System.out.println(ex);
         }
 
