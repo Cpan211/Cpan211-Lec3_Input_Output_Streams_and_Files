@@ -24,18 +24,18 @@ public class OutputStreamClass {
 //    //lets prove that it is a type of outputstream and then use the methods we saw in the docs
 ////        System.out.println("fkljds");
 ////        
+
+        System.out.write(100); //calling the write with byte array            
+        System.out.flush();
+        
 //        for(int i =97; i<= 122; i++)
 //            System.out.write(i);
 //        System.out.flush();
 
 //    //Writing just 1 byte on the console
-//    
-//    //Difference between byte and character streams(ASCII)
-//    
 //    //how to convert string into byte array and use it to write on the console
 
-        System.out.write(100); //calling the write with byte array            
-        System.out.flush();
+
 
 
         String s = "some words";
@@ -43,22 +43,7 @@ public class OutputStreamClass {
         System.out.write(s.getBytes(), 2, s.length() - 2); //calling the write with byte array          
         System.out.flush();
 
-        
-//            // remember to always close the stream when we are done with it-->finally key word
-//            
-//            
-//            //-- Let's talk about the input stream before moving on to FileOutputStream
-//            
-//            
-//            /**
-//             *
-//             * --------------------------------------------------------------
-//             */
-//            
-//            //FileOutputStream --> Writting to files
-//            
-//            
-//            // 1st program lets write on a file from the system.in we saw (Append vs Overriding)
+// 1st program lets write on a file from the system.in we saw (Append vs Overriding)
 //            
 
         /*--------------------------------------------------------------------------*/
